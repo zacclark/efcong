@@ -1,0 +1,41 @@
+*		{margin:0 padding:0}
+
+#container
+{
+	width:940px;
+	padding:20px;
+	margin: 20px auto;
+	position: relative;
+}
+
+#titleBox
+{
+	height: 150px;
+	width: 940px;
+}
+
+#newsBox
+{
+	background-color:blue;
+	float:left;
+	height: 350px;
+	width: 120px;
+}
+
+#contentBox
+{
+	background-color:red;
+	float:right;
+	height:350px;
+	width: 800px;
+}
+
+#footerBox
+{
+	background-color:pink;
+	height:50px;
+	width:940px;
+	
+
+
+}
