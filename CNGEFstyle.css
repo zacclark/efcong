@@ -32,9 +32,11 @@
 
 #footerBox
 {
-	background-color:pink;
+	margin-top:20px;
+	background-color:#EFE9E9;
 	height:50px;
 	width:940px;
+	float:left;
 	
 
 
