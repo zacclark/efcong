@@ -1,9 +1,11 @@
-*		{margin:0 padding:0}
+*
+{
+	margin:0 padding:0
+}
 
 body
 {
 	background-color:#C0C0C0;
-
 }
 
 h1
@@ -23,7 +25,6 @@ ul.linkList
 	margin-left:100px;
 	margin-right:100px;
 	margin-bottom:10;
-
 }
 
 li.link
@@ -37,13 +38,13 @@ li.link
 	color:white;
 	border-radius:10px;
 	-moz-border-radius:10px;
-	background-image:url("images/backGradient.jpeg");
+	background-image:url("../images/backGradient.jpeg");
 	background-repeat:repeat-x;
 }
 
 #container
 {
-	background-image:url("images/tempBanner.jpeg");
+	background-image:url("../images/tempBanner.jpeg");
 	background-position:top center;
 	background-repeat:no-repeat;
 	background-color:#C0C0C0;
@@ -65,7 +66,7 @@ li.link
 #imageBox
 {
 	float:left;
-	background-image:url("images/tempSoldier.jpeg");
+	background-image:url("../images/tempSoldier.jpeg");
 	width:270px;
 	height:180px;
 	margin: 20px;
@@ -114,7 +115,6 @@ li.link
 	-moz-border-radius-topright:15px;
 	border-top-left-radius:15px;
 	border-top-right-radius:15px;
-	
 	text-align:center;
 }
 
