@@ -10,6 +10,10 @@ Add more content here when you make features. Explain them this way:
 
 # Features
 
+## Here is the updated HTML and CSS, as per Mockup 3
+	
+	The buttons on the top are links to pages that do not exist yet.  Please reference this code when created the necessary pages, as the names have been decided there.
+
 # Git Workflow
 
 Don't work in `master`. Ever. All work should be branched off of `develop`, into a "feature branch" titled like `feature/<name>`. So, if you are going to make a navigation change, you would make a new branch (from `develop`) called `feature/nav`. Once a feature is done, it should be merged back in develop. This should be done with the `--no-ff` option to keep nice clean history. Once a feature has been merged, its branch should be deleted. The workflow is something like this:
