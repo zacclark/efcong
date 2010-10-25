@@ -6,18 +6,15 @@
 body
 {
 	background-color:#C0C0C0;
+	font-family: arial, helvetica;
+
 }
 
-h1
+p
 {
-	text-align: center;
-	margin-bottom:50px;
+	text-indent:20px;
 }
 
-h2
-{
-	text-align: center;
-}
 
 ul.linkList
 {
@@ -27,9 +24,9 @@ ul.linkList
 	margin-bottom:10;
 }
 
-li.link
+.link a
 {
-	float:left;
+	display:block;
 	padding-left:20px;
 	padding-right:20px;
 	padding-top:5px;
@@ -40,6 +37,12 @@ li.link
 	-moz-border-radius:10px;
 	background-image:url("../images/backGradient.jpeg");
 	background-repeat:repeat-x;
+
+}
+
+li.link
+{
+	float:left;	
 }
 
 #container
@@ -63,6 +66,12 @@ li.link
 	border-color:#EEEEEE;
 }
 
+#titleBox h1
+{
+	text-align: center;
+	margin-bottom:50px;
+}
+
 #imageBox
 {
 	float:left;
@@ -75,7 +84,6 @@ li.link
 #contentBox
 {
 	margin-top:20px;
-	padding:10px;
 	padding-top: 20px;
 	background-color:#C0C0C0;
 	float:right;
@@ -86,9 +94,21 @@ li.link
 	border-radius:15px;
 }
 
-#newsBox
+.inner
 {
 	padding:10px;
+}
+
+#newsBox h2, #contentBox h2
+{
+	text-align: center;
+	border-bottom-style: solid;
+	border-color: #EEEEEE;
+	padding-bottom: 10px;
+}
+
+#newsBox
+{
 	margin-left:20px;
 	background-color:#C0C0C0;
 	float:left;
@@ -116,6 +136,7 @@ li.link
 	border-top-left-radius:15px;
 	border-top-right-radius:15px;
 	text-align:center;
+	border-bottom: none;
 }
 
 A:link
