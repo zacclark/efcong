@@ -1,0 +1,144 @@
+*
+{
+	margin:0 padding:0
+}
+
+body
+{
+	background-color:#C0C0C0;
+}
+
+h1
+{
+	text-align: center;
+	margin-bottom:50px;
+}
+
+h2
+{
+	text-align: center;
+}
+
+ul.linkList
+{
+	list-style:none;
+	margin-left:100px;
+	margin-right:100px;
+	margin-bottom:10;
+}
+
+li.link
+{
+	float:left;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-left:10px;
+	color:white;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	background-image:url("../images/backGradient.jpeg");
+	background-repeat:repeat-x;
+}
+
+#container
+{
+	background-image:url("../images/tempBanner.jpeg");
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-color:#C0C0C0;
+	width:940px;
+	padding:20px;
+	margin: 20px auto;
+	position: relative;
+}
+
+#titleBox
+{
+	margin-top:100px;
+	height: 70px;
+	width: 940px;
+	border-bottom-style:solid;
+	border-color:#EEEEEE;
+}
+
+#imageBox
+{
+	float:left;
+	background-image:url("../images/tempSoldier.jpeg");
+	width:270px;
+	height:180px;
+	margin: 20px;
+}
+
+#contentBox
+{
+	margin-top:20px;
+	padding:10px;
+	padding-top: 20px;
+	background-color:#C0C0C0;
+	float:right;
+	height:560px;
+	width: 600px;
+	border: solid #EEEEEE;
+	-moz-border-radius:15px;
+	border-radius:15px;
+}
+
+#newsBox
+{
+	padding:10px;
+	margin-left:20px;
+	background-color:#C0C0C0;
+	float:left;
+	height: 370px;
+	width: 230px;
+	border: solid #EEEEEE;
+	-moz-border-radius:15px;
+	border-radius:15px;
+}
+
+
+
+#footerBox
+{
+	margin-top:20px;
+	margin-left:20px;
+	background-color:#C0C0C0;
+	padding: 20px;
+	height:10px;
+	width:875px;
+	float:left;
+	border: solid #EEEEEE;
+	-moz-border-radius-topleft:15px;
+	-moz-border-radius-topright:15px;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	text-align:center;
+}
+
+A:link
+{
+	text-decoration:none;
+	color:#EEEEEE;
+}
+
+A:active
+{
+	text-decoration:none;
+	color:#EEEEEE;
+
+}
+
+A:visited
+{	
+	text-decoration:none;
+	color:#EEEEEE;
+}
+
+A:hover
+{
+	text-decoration:none;
+	color: #CCCCCC;
+}
