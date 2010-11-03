@@ -2,5 +2,4 @@ Options +FollowSymLinks
 RewriteEngine on
 RewriteBase /
 
-RewriteRule ^(.+)[^\.(gif|jpe?g|png|css)]$	/?path=$1
-#redirects everything to index.php, even the sub pages.  But the .css works
+RewriteRule ^(\w+)(\.)?[^((gif)|(jpe?g)|(png)|(css))]*$ 	/?path=$1
