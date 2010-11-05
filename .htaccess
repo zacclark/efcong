@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^(\w+)(\.)?[^((gif)|(jpe?g)|(png)|(css))]*$ 	/?path=$1
