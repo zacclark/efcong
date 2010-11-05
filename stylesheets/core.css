@@ -47,7 +47,7 @@ li.link
 
 #container
 {
-	background-image:url("../images/tempBanner.jpeg");
+	background-image:url("../images/finalBanner.jpg");
 	background-position:top center;
 	background-repeat:no-repeat;
 	background-color:#C0C0C0;
@@ -59,7 +59,7 @@ li.link
 
 #titleBox
 {
-	margin-top:100px;
+	margin-top:296px;
 	height: 70px;
 	width: 940px;
 	border-bottom-style:solid;
