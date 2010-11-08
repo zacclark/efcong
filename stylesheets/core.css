@@ -117,6 +117,13 @@ li.link
 	border: solid #EEEEEE;
 	-moz-border-radius:15px;
 	border-radius:15px;
+	position: relative;
+}
+#linkBox
+{
+	width:230px;
+	position:absolute;
+	bottom:0;
 }
 
 
