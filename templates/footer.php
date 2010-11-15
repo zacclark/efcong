@@ -6,10 +6,10 @@
 				
 				<div id="linkBox">
 				<a href="http://www.facebook.com/pages/Education-Foundation-for-the-Colorado-National-Guard/128928977162718" target="_blank">
-			<img src="http://www.stolaf.edu/services/hr/facebook_logo.png" width="100" height="100" align="left"/>
+			<img src="http://www.stolaf.edu/services/hr/facebook_logo.png" width="75" height="75" align="left"/>
 </a>
 			<a href="http://twitter.com/#!/efcong" target="_blank">
-			<img src="http://www.paslode.com/uploadedImages/Sidebar/twitter%20logo.png?n=7452dU=NU=DA=" width="100" height ="100" align="right"/>
+			<img src="http://www.paslode.com/uploadedImages/Sidebar/twitter%20logo.png?n=7452dU=NU=DA=" width="75" height ="75" align="right"/>
 </a>
 			<h4>Follow us on Facebook and Twitter!</h4>
 				</div>
@@ -22,5 +22,6 @@
 		
 		</div>
 	</body>
+
 	
 </html>
