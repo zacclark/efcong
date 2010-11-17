@@ -10,9 +10,9 @@ Add more content here when you make features. Explain them this way:
 
 # Features
 
-## Here is the updated HTML and CSS, as per Mockup 3
+## Page Editing
 	
-The buttons on the top are links to pages that do not exist yet. Please reference this code when created the necessary pages, as the names have been decided there.
+After logging in, an "edit" link will appear next to page titles. Clicking it will allow the user to edit the page online. Things added should be formatted with html. This may be replaced before the end of the project, but also potentially not.
 
 # Git Workflow
 
