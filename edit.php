@@ -44,6 +44,9 @@
 	$name = $_POST['name'];
 	$body = $_POST['body'];
 	
+	$name = mysql_real_escape_string(strip_tags($name));
+	$body = mysql_real_escape_string(strip_tags($body));
+	
 	$query = "UPDATE " . $table . " SET name = '" . $name . "', body = '" . $body . "' WHERE id = " . $id;
 	$run = mysql_query($query);
 	

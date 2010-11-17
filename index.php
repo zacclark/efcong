@@ -34,7 +34,7 @@
 				(<a href="/edit.php?type=module&amp;id=<?php echo $module['id']; ?>">edit</a>)
 			<?php } ?>
 			</h2>
-			<div class="contents">
+			<div class="inner">
 				<?php echo $module['body']; ?>
 			</div>
 		</div>
@@ -42,8 +42,8 @@
 	
 <?php
 	
-	}else{
-		
+	
+	}else{	
 ?>
 	
 	<div id="contentBox">
@@ -52,9 +52,7 @@
 			<p>No page exists on the EFCONG website with that url.</p>
 		</div>
 	</div>
-	
 <?php
-		
 	}
 	
 ?>
