@@ -11,11 +11,23 @@ if ($_SESSION['logged_in']) {
 	<head>
 		<meta charset="UTF-8">
 		<title>Education Foundation for the Colorado National Guard<?php if($logged_in_user){echo " (logged in)";}?></title>
-		<link rel="stylesheet" type="text/css" href="./stylesheets/core.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/core.css" />
 	</head>
 	
 	<body>
 		<div id="container">
+			
+			<?php if($logged_in_user){ ?>
+				
+				<div id="actionbar">
+					<p>You are logged in to EFCONG website administration.</p>
+					<ul class="links">
+						<li><a href="/logout.php">Logout</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				
+			<?php } ?>
 		  
 			<div id="titleBox">
 				<h1>Education Foundation for the Colorado National Guard</h1>
