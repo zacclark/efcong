@@ -221,3 +221,20 @@ A:hover
 .clear {
 	clear: both;
 }
+
+form .row {
+	width: 100%;
+	float: left;
+}
+
+form .row label {
+	float: left;
+}
+
+form .row input, form .row textarea {
+	float: left;
+}
+
+form textarea {
+	width: 400px; height: 300px;
+}
