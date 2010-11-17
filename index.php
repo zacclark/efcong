@@ -18,7 +18,7 @@
 		<h2>
 			<?php echo $row["name"]; ?>
 			<?php if ($logged_in_user) { ?>
-				(<a href="/editpage.php?id=<?php echo $row['id']; ?>">edit</a> | <a href="/addmodule.php?pid=<?php echo $row['id']; ?>">add sidebar item</a>)
+				(<a href="/edit.php?type=page&amp;id=<?php echo $row['id']; ?>">edit</a> | <a href="/addmodule.php?pid=<?php echo $row['id']; ?>">add sidebar item</a>)
 			<?php } ?>
 		</h2>
 		<div class="inner">
@@ -31,7 +31,7 @@
 			<h2>
 				<?php echo $module['name']; ?>
 				<?php if ($logged_in_user) { ?>
-				(<a href="/editmodule.php?id=<?php echo $module['id']; ?>">edit</a>)
+				(<a href="/edit.php?type=module&amp;id=<?php echo $module['id']; ?>">edit</a>)
 			<?php } ?>
 			</h2>
 			<div class="contents">

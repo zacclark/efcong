@@ -5,24 +5,34 @@
 	require("database/config.php");
 	mysql_connect($host, $user, $password); 
 	mysql_select_db($database) or die("Critical Error: Unable to find the right database"); 	
-	$pid = $_GET['id'];
+	$id = $_GET['id'];
+	$type = $_GET['type'];
+	//$action = $_GET['action'];
+	
+	if($type == "page"){
+		$table = "pages";
+	}else if($type == "module") {
+		$table = "modules";
+	}else{
+		die("incorrect type");
+	}
 
 	if (!$_POST) {
 	
-	$page = mysql_fetch_assoc( mysql_query( "SELECT * FROM pages WHERE id = " . $pid . " LIMIT 1" ) );
+	$item = mysql_fetch_assoc( mysql_query( "SELECT * FROM " . $table . " WHERE id = " . $id . " LIMIT 1" ) );
 ?>
 
 	<div id="contentBox"> 
-		<h2>Editing Page</h2> 
+		<h2>Editing Item</h2> 
 		<div class="inner"> 
 			<form action="" method="post">
 				<div class="row">
 					<label for="name">Name:</label>
-					<input name="name" value="<?php echo $page['name']; ?>" />
+					<input name="name" value="<?php echo $item['name']; ?>" />
 				</div>
 				<div class="row">
 					<label for="body">Body:</label>
-					<textarea name="body"><?php echo $page['body']; ?></textarea>
+					<textarea name="body"><?php echo $item['body']; ?></textarea>
 				</div>
 				<input type="submit" value="save" />
 			</form>
@@ -34,12 +44,12 @@
 	$name = $_POST['name'];
 	$body = $_POST['body'];
 	
-	$query = "UPDATE pages SET name = '" . $name . "', body = '" . $body . "' WHERE id = " . $pid;
+	$query = "UPDATE " . $table . " SET name = '" . $name . "', body = '" . $body . "' WHERE id = " . $id;
 	$run = mysql_query($query);
 	
 ?>
 <div id="contentBox"> 
-		<h2>Saved Page</h2> 
+		<h2>Saved Item</h2> 
 	</div>
 <?php } ?>
 
