@@ -120,6 +120,24 @@ li.link
 	border-radius:15px;
 	position: relative;
 }
+
+.module {
+	margin-left: 20px;
+	background-color: #c0c0c0;
+	float: left;
+	width: 230px;
+	border: solid #EEEEEE;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	position: relative;
+}
+
+.module h2 {
+	text-align: center;
+	border-bottom: solid #EEEEEE;
+	padding-bottom: 10px;
+}
+
 #linkBox
 {
 	width:220px;
@@ -170,4 +188,36 @@ A:hover
 {
 	text-decoration:none;
 	color: #CCCCCC;
+}
+
+#actionbar {
+	background: #333;
+	padding: 5px 10px;
+}
+
+#actionbar p {
+	float: left;
+	color: #fff;
+	padding: 5px 0;
+}
+
+#actionbar .links {
+	list-style: none;
+	float: right;
+}
+
+#actionbar .links li {
+	float: left;
+}
+
+#actionbar .links a	{
+	display: block;
+	float: left;
+	margin-left: 5px;
+	padding: 5px 10px;
+	background: #666;
+}
+
+.clear {
+	clear: both;
 }
