@@ -31,6 +31,10 @@
 					<input name="name" value="<?php echo $item['name']; ?>" />
 				</div>
 				<div class="row">
+					<label for="slug">Slug:</label>
+					<input name="slug" value = "<?php echo $item['slug']; ?>" />
+				</div>
+				<div class="row">
 					<label for="body">Body:</label>
 					<textarea name="body"><?php echo $item['body']; ?></textarea>
 				</div>
@@ -42,12 +46,14 @@
 <?php }else{ 
 	
 	$name = $_POST['name'];
+	$slug = $_POST['slug'];
 	$body = $_POST['body'];
 	
 	$name = mysql_real_escape_string(strip_tags($name));
+	$slug = mysql_real_escape_string(strip_tags($slug));
 	$body = mysql_real_escape_string(strip_tags($body));
 	
-	$query = "UPDATE " . $table . " SET name = '" . $name . "', body = '" . $body . "' WHERE id = " . $id;
+	$query = "UPDATE " . $table . " SET name = '" . $name . "', slug = '" . $slug . "', body = '" . $body . "' WHERE id = " . $id;
 	$run = mysql_query($query);
 	
 ?>
