@@ -16,6 +16,7 @@ p
 }
 
 
+
 ul.linkList
 {
 	list-style:none;
@@ -59,7 +60,7 @@ li.link
 
 #titleBox
 {
-	margin-top:296px;
+	margin-top:230px;
 	height: 70px;
 	width: 940px;
 	border-bottom-style:solid;
@@ -69,6 +70,7 @@ li.link
 #titleBox h1
 {
 	text-align: center;
+	font-size: 30px;
 	margin-bottom:50px;
 }
 
@@ -87,7 +89,8 @@ li.link
 	padding-top: 20px;
 	background-color:#C0C0C0;
 	float:right;
-	height:560px;
+	min-height:560px;
+	height: auto;
 	width: 600px;
 	border: solid #EEEEEE;
 	-moz-border-radius:15px;
@@ -99,7 +102,7 @@ li.link
 	padding:10px;
 }
 
-#newsBox h2, #contentBox h2
+#contentBox h2
 {
 	text-align: center;
 	border-bottom-style: solid;
@@ -107,16 +110,30 @@ li.link
 	padding-bottom: 10px;
 }
 
-#newsBox
-{
-	margin-left:20px;
-	background-color:#C0C0C0;
-	float:left;
-	height: 370px;
+.module {
+	margin-left: 20px;
+	margin-top: 20px;
+	background-color: #c0c0c0;
+	float: left;
+	clear: left;
 	width: 230px;
 	border: solid #EEEEEE;
-	-moz-border-radius:15px;
-	border-radius:15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	position: relative;
+}
+
+.module h2 {
+	text-align: center;
+	border-bottom: solid #EEEEEE;
+	padding-bottom: 10px;
+}
+
+#linkBox
+{
+	width:220px;
+	position:absolute;
+	bottom:0;
 }
 
 
@@ -161,5 +178,54 @@ A:visited
 A:hover
 {
 	text-decoration:none;
-	color: #CCCCCC;
+	color: #6A93D4;
+}
+
+#actionbar {
+	background: #333;
+	padding: 5px 10px;
+}
+
+#actionbar p {
+	float: left;
+	color: #fff;
+	padding: 5px 0;
+}
+
+#actionbar .links {
+	list-style: none;
+	float: right;
+}
+
+#actionbar .links li {
+	float: left;
+}
+
+#actionbar .links a	{
+	display: block;
+	float: left;
+	margin-left: 5px;
+	padding: 5px 10px;
+	background: #666;
+}
+
+.clear {
+	clear: both;
+}
+
+form .row {
+	width: 100%;
+	float: left;
+}
+
+form .row label {
+	float: left;
+}
+
+form .row input, form .row textarea {
+	float: left;
+}
+
+form textarea {
+	width: 400px; height: 300px;
 }

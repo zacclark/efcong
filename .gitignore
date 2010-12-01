@@ -1,2 +1,3 @@
 favicon.*
 .DS_Store
+database/config.php

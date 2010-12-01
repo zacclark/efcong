@@ -2,4 +2,4 @@ Options +FollowSymLinks
 RewriteEngine on
 RewriteBase /
 
-RewriteRule ^(\w+)(\.)?[^((gif)|(jpe?g)|(png)|(css))]*$ 	/?path=$1
+RewriteRule ^(\w+)(\.)?[^((gif)|(jpe?g)|(png)|(css)|(php)]*$ 	/?path=$1

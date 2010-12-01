@@ -1,16 +1,15 @@
 
-			<div id="newsBox">
-				<h2>News</h2>
-				<div class="inner">
-			  		<p>Nunc in sem ut nisl pretium tempus sit amet ac orci. Fusce luctus leo id risus egestas sollicitudin. Nulla et mi quis justo luctus pellentesque.</p>
-			  	</div>
-			</div>
-			
 			<div id="footerBox">
-				Home|News|Scholarship|History|Donate|Contact Us
+				<a href="/"> Home </a>|
+				<a href="news"> News </a>|
+				<a href="scholarship"> Scholarship </a>|
+				<a href="history"> History </a>|
+				<a href="donate"> Donate </a>|
+				<a href="contact"> Contact Us </a>
 			</div>
 		
 		</div>
 	</body>
+
 	
 </html>
