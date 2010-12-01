@@ -2,10 +2,6 @@
 			
 <?php
 	
-	require("database/config.php");
-
-	mysql_connect($host, $user, $password); 
-	mysql_select_db($database) or die("Critical Error: Unable to find the right database"); 	
 	$path = $_GET["path"];
 	$query = "SELECT * FROM pages WHERE slug = '" . $path . "' limit 1";
 	$result = mysql_query($query);

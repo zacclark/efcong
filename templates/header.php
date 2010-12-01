@@ -5,6 +5,10 @@ if ($_SESSION['logged_in']) {
 }else{
 	$logged_in_user = false;
 }
+require("database/config.php");
+mysql_connect($host, $user, $password); 
+mysql_select_db($database) or die("Critical Error: Unable to find the right database"); 	
+
 ?><!DOCTYPE html>
 <html>
 
@@ -28,16 +32,20 @@ if ($_SESSION['logged_in']) {
 				</div>
 				
 			<?php } ?>
-		  
+			
+			<?php 
+			$query = "SELECT * FROM pages";
+			$result = mysql_query($query);
+			echo mysql_error();			
+		  	?>
 			<div id="titleBox">
 				<h1>Education Foundation for the Colorado National Guard</h1>
 				<ul class="linkList">
-					<li class="link"><a href="/">Home</a></li>
-					<li class="link"><a href="/news">News</a></li>
-					<li class="link"><a href="/scholarship">Scholarship</a></li>
-					<li class="link"><a href="/history">History</a></li>
-					<li class="link"><a href="/donate">Donate</a></li>
-					<li class="link"><a href="/contact">Contact Us</a></li>
+					<?php while($row = mysql_fetch_array($result))
+					{
+					?>
+						<li class = "link"><a href="/<?php echo $row['slug']; ?>"><?php echo $row['name']; ?></a></li>
+					<?php } ?>
 				</ul>
 			</div>
 			
