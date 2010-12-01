@@ -22,11 +22,14 @@ ul.linkList
 	list-style:none;
 	margin: auto;
 	margin-bottom:10;
+	text-align: center;
+	padding: 10px 0;
+	width: 100%; float: left;
 }
 
 .link a
 {
-	display:block;
+	display:inline;
 	padding-left:20px;
 	padding-right:20px;
 	padding-top:5px;
@@ -42,7 +45,7 @@ ul.linkList
 
 li.link
 {
-	float:left;	
+	display: inline;
 }
 
 #container
